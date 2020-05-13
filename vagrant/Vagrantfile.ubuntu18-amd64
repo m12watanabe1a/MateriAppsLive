@@ -67,7 +67,7 @@ Vagrant.configure("2") do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
-    wget -O /etc/apt/sources.list.d/materiapps-bionic.list http://jaist.dl.sourceforge.net/project/materiappslive/Debian/sources/materiapps-bionic.list
+    wget -O /etc/apt/sources.list.d/materiapps-bionic.list https://sourceforge.net/projects/materiappslive/files/Debian/sources/materiapps-bionic.list
     apt-get -o Acquire::AllowInsecureRepositories=true update
     apt-get -y --allow-unauthenticated -o Acquire::AllowInsecureRepositories=true install materiapps-keyring
     apt-get update

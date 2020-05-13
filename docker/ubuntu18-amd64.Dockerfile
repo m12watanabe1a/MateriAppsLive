@@ -1,4 +1,4 @@
-FROM --platform=amd64 ubuntu:18.04
+FROM ubuntu:18.04
 
 RUN set -x \
   && apt-get update \

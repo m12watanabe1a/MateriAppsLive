@@ -1,4 +1,4 @@
-FROM --platform=amd64 ubuntu:16.04
+FROM ubuntu:16.04
 
 RUN set -x \
   && apt-get update \
